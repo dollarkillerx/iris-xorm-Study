@@ -6,10 +6,20 @@
 * */
 package datasource
 
-var (
-	//mysql
+import (
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/go-xorm/xorm"
 )
 
-func init() {
+var (
+	Engine *xorm.Engine
+	e error
+)
+
 // 初始化数据源
+func init() {
+	Engine, e = xorm.NewEngine("mysql", "dsn")
+	if e != nil {
+		panic(e.Error())
+	}
 }

@@ -55,3 +55,9 @@ func main() {
     └── views
         └── hello
 ```
+
+### xorm 自动生成model
+go get github.com/go-xorm/cmd/xorm
+``` 
+xorm reverse mysql "root:root...." templates/goxorm/
+```

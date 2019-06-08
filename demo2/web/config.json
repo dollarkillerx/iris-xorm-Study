@@ -1,0 +1,5 @@
+{
+  "driver_name": "mysql",
+  "dsn": "one:2D7y4DEwYZfN43z3@(127.0.0.1:3306)/one?charset=utf8",
+  "debug": "true"
+}
